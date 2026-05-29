@@ -85,7 +85,7 @@ FROM retail_sales;
 
 1000
 
-### Insight:0eeeeeeeeeww
+### Insight:
 
 The dataset contains a moderate customer base suitable for data analysis. It suggests that each customer is uniquely responsible for each transaction and vice versa.
 
