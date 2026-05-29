@@ -5,7 +5,11 @@ select count(*) from retail_sales ;
 select count(distinct customer_id) as total_number_of_customers from retail_sales ;
 
 --1.3
-select distinct category from retail_sales  ;
+select distinct category from retail_sales ;
+
+--1.4
+select sum(total_sale) from retail_sales ;
+
 
 --2.1
 select category, sum(total_sale) from retail_sales
@@ -40,5 +44,5 @@ order by month ;
 --4.2
 select month(sale_date) as month, sum(total_sale) as revenue from retail_sales
 group by month
-order by month desc
+order by revenue desc
 limit 1 ;
